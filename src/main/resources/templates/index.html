@@ -3,56 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Habit Tracker</title>
-	<style>
-		body{
-			background-color: #EEEEEE;
-			color: #3B1E54;
-			font-family: Arial,  sans-serif;
-			margin: 0;
-			padding: 0;
-			}
-		header{
-			background-color: #3B1E54;
-			color: #FFFFFF;
-			padding: 20px;
-			text-align: center;
-		}
-		button{
-			background-color: #9B7EBD;
-			color: #FFFFFF;
-			border: none;
-			padding: 10px 20px;
-			cursor: pointer;
-			border-radius: 5px;
-			font-size: 16px;
-			margin: 5px;
-		}
-		button:hover{
-			background-color: #D4BEE4;
-		}
-		.features{
-			background-color: #D4BEE4;
-			padding: 20px;
-			border-radius: 8px;
-			margin: 20px;
-		}
-		footer{
-			background-color: #3B1E54;
-			color: #FFFFFF;
-			text-align: center;
-			padding: 10px;
-			position: fixed;
-			width: 100%;
-			bottom: 0;
-		}
-	</style>	
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link  href="style.css" rel="stylesheet">
   </head>
   <body>
 	<header>
-		<h1>Welcome to Habit Tracker</h1>
-		<p>Track and improve your habits easily!</p>
-		<button th:text="'Get Started'"></button>
+		<div class="brand">Aadatein</div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#home"><i class="fas fa-home"></i><span class="tooltip">Home</span></a></li>
+				<li><a href="#habits"><i class="fas fa-check-circle"></i><span class="tooltip">Habits</span></a></li>
+				<li><a href="#analytics"><i class="fas fa-chart-line"></i><span class="tooltip">Analytics</span></a></li>
+				<li><a href="#profile"><i class="fas fa-user"></i><span class="tooltip">Profile</span></a></li>
+			</ul>
+		</nav>
 	</header>
+	<!-- Hero section -->
+	<section class="hero">
+		<h2>Transform your Habits Today!</h2>
+		<p>Join Aadatein and start building a better version of yourself, one habit at a time!!</p>
+		<button th:text="'Get Started'"></button>
+
+	</section>
 	<main>
 		<section class="features">
 			<h2>Core Features</h2>
