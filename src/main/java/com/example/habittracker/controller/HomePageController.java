@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.habittracker.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +9,12 @@ public class HomePageController {
 	public String index()
 	{
 		return "index";
+	}
+	
+	@GetMapping("/habit")
+	public String showHabitsPage()
+	{ 
+		return "habit";
 	}
 	
 }
